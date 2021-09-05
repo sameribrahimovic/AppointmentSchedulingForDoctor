@@ -44,7 +44,7 @@ namespace AppointmentScheduling
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication(); //add this line for registration to work. When user register, go to home page
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
